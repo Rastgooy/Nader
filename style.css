@@ -45,10 +45,59 @@ body {
     height: 70px;
 }
 
-.nav-logo h3 {
+/* Modern Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05);
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logo-container:hover .logo-icon {
+    transform: rotate(10deg);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.logo-name {
+    font-size: 1.4rem;
+    font-weight: 700;
     color: #2c3e50;
-    font-weight: 600;
-    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.logo-subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: 'Arial', sans-serif;
 }
 
 .nav-menu {
